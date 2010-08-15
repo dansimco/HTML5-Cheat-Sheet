@@ -6,11 +6,7 @@
 	<meta name="description" content="@todo write meta description">
 	<meta name="author" content="Exploding Box Productions">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-	<link rel="shortcut icon" href="resources/images/favicon.ico">
-	<link rel="apple-touch-icon" href="resources/images/apple-touch-icon.png">
-	
 	<link rel="stylesheet" href="resources/css/style.css?v=1">
-	<link rel="stylesheet" media="handheld" href="resources/css/handheld.css?v=1">
 
 </head>
 
@@ -21,10 +17,10 @@
 			<h2>Heading 2</h2>
 			<h3>Heading 3</h3>
 			<h4>Heading 4</h4>
-			<h5>Heading 5</h5>
-			<p>Mauris vel neque sit amet nunc gravida <strong>congue</strong> sed sit amet purus. Quisque lacus quam, <strong>egestas</strong> ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi <strong>malesuada</strong> nulla nec purus convallis consequat. Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Maecenas quis tortor arcu. Vivamus rutrum nunc non neque.</p>
-			<blockquote>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea <em>dictumst</em>. Nam pulvinar, odio sed rhoncus.</blockquote>
+			<p>Mauris vel neque sit amet nunc gravida <strong>congue</strong> sed sit amet purus. Quisque lacus quam, <strong>egestas</strong> ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi <strong>malesuada</strong> nulla nec purus convallis consequat. <hr>Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Maecenas quis tortor arcu. Vivamus rutrum nunc non neque.</p>
+			<blockquote>Donec semper quam scelerisque tortor dictum gravida.In hac habitasse platea <em>dictumst</em>. Nam pulvinar, odio sed rhoncus.</blockquote>
 			<p>Lorem ipsum dolor sit amet, consectetur <em>adipiscing</em> elit. Vivamus luctus urna sed urna ultricies ac tempor dui <strong>sagittis</strong>. In condimentum <em>facilisis</em> porta. Sed nec diam eu diam mattis.</p>
+			<small>*Fine Print</small>
 			<ul>
 				<li>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur</li>
 				<li>Morbi malesuada nulla nec purus convallis consequat. Vivamus id</li>
@@ -44,6 +40,12 @@
 				<li>In condimentum facilisis porta</li>
 				<li>Nam pulvinar, odio sed rhoncus suscipit</li>
 			</ol>
+			<dl>
+				<dt>Term</dt>
+				<dd>Definition</dd>
+				<dt>Term2</dt>
+				<dd>Definition2</dd>
+			</dl>
 			<table border="0" cellspacing="0" cellpadding="0">
 				<thead>
 					<tr>
@@ -63,13 +65,12 @@
 				</tbody>
 				<tfoot>
 					<th>footer</th><th>footer</th><th>footer</th><th>footer</th>
-
 				</tfoot>
 			</table>
 			
 			
 		</div>
-		<div id="controls">
+		<div id="forms">
 			<a href="index.html">Anchor</a>
 			<form action="index.html" method="get" accept-charset="utf-8">
 				<fieldset>
@@ -106,9 +107,6 @@
 					
 					<label for="range">Range</label>
 					<input type="range" name="range" placeholder="500">
-					
-					<label for="search">Search</label>
-					<input type="search" name="search" placeholder="search">
 
 					<label for="radio">Radio</label>
 					<input type="radio" name="radio" value="radio1" checked>
@@ -139,12 +137,87 @@
 			
 			
 		</div>
-	
-	
-	
-	
-	
-	
+		<div id="ui">
+			
+			<div class="tabview">
+				<div class="tabs">
+					<a href="#page1">Page1</a><a href="#page2">Page2</a><a href="#page3">Page3</a>
+				</div>
+				<div class="pages">
+					<div id="page1">
+						<p>
+							Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo.
+						</p>
+					</div>
+					<div id="page2">
+						<p>
+							Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel.
+						</p>
+					</div>
+					<div id="page3">
+						<p>
+							Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="segmented">
+				<button>First</button>
+				<button>Second</button>
+				<button>Third</button>
+				<input type="hidden" name="segmented" value="">
+			</div>
+			
+			<div class="disclosure">
+				<a href="#disclosed">Disclosure</a>
+				<div class="disclosed">
+					Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed.
+				</div>
+			</div>
+			
+			<div id="stepperContainer">
+				<div class="stepper">
+					<input type="text">
+					<div class="controls">
+						<button class="inc">+</button>
+						<button class="dec">-</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="search">
+				<label for="search">Search</label>
+				<input type="search" name="search" placeholder="search">
+				<div class="results">
+					<ul>
+						<li>Aenean facilisis nulla vitae urna tincidunt congue sed ut dui</li>
+						<li>Donec viverra auctor lobortis. Pellentesque eu est a nulla</li>
+						<li>Vivamus luctus urna sed urna ultricies ac tempor dui</li>
+						<li>Donec semper quam scelerisque tortor dictum</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="dialogue">
+				<label>Dialogue Label</label>
+				<div class="dialogue-content">
+					<p>Dialogue Content</p>
+				</div>
+				<div class="dialogue-actions">
+					<button class="primary">Action1</button><button>Action2</button>
+				</div>
+			</div>
+			
+			<div id="progressContainer">
+				<div class="progressbar">
+					<div class="progress">
+						<label>50%</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
   </div>
 	<script src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js"></script>
 </body>
