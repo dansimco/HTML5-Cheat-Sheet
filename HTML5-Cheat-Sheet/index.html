@@ -6,16 +6,13 @@
 	<meta name="description" content="@todo write meta description">
 	<meta name="author" content="Exploding Box Productions">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-	<link rel="shortcut icon" href="resources/images/fav.png">
-
-	<link rel="stylesheet" href="resources/css/style.css?v=1">
 
 </head>
 
 <body>
   <div id="container">
 		<div id="copy" class>
-			<h1>Heading 1</h1>
+			<h1 class="rounded">Heading 1</h1>
 			<h2>Heading 2</h2>
 			<h3>Heading 3</h3>
 			<h4>Heading 4</h4>
@@ -85,10 +82,19 @@
 			<a href="index.html">Anchor</a>
 			<form action="index.html" method="get" accept-charset="utf-8">
 				<fieldset>
+					
 					<legend>Controls</legend>
-					<button>Button</button>
-					<a href="index.html" class="button">Anchor Button</a>
-					<input type="submit" name="submit" value="Submit" id="submit"/>
+					<div>
+						<button>Button</button>
+					</div>
+					<div>
+						<a href="index.html" class="button">Anchor Button</a>
+						<input type="submit" name="submit" value="Submit" id="submit"/>
+					</div>
+					<div>
+						<button class="small">Btn</button>
+					</div>
+					<hr/>
 					<select name="select" id="select">
 						<option value="option1">option1</option>
 						<option value="option2">option2</option>
@@ -100,47 +106,60 @@
 				</fieldset>
 				<fieldset>
 					<legend>Fields</legend>
-
-					<label for="text">Text</label>
-					<input type="text" name="text" placeholder="text">
-
-					<label for="email">Email</label>
-					<input type="email" name="email" placeholder="email address">
-					
-					<label for="Password">Password</label>
-					<input type="password" name="text" value="" placeholder="sekret">
-					
-					<label for="number">Number</label>
-					<input type="number" name="number" placeholder="123456" value="0">
-					
-					<label for="tel">Tel</label>
-					<input type="tel" name="tel" placeholder="0413428890">
-					
-					<label for="range">Range</label>
-					<input type="range" name="range" placeholder="500">
-
-					<label for="radio">Radio</label>
-					<input type="radio" name="radio" value="radio1" checked>
-					<input type="radio" name="radio" value="radio2">
-					<input type="radio" name="radio" value="radio3">
-
-					<label for="checkbox1">Checkbox1</label>
-					<input type="checkbox" name="checkbox" value="checkbox1" id="checkbox1" checked>
-					<label for="checkbox2">Checkbox2</label>
-					<input type="checkbox" name="checkbox" value="checkbox2" id="checkbox2">
-					<label for="checkbox3">Checkbox3</label>
-					<input type="checkbox" name="checkbox" value="checkbox3" id="checkbox3">
-
-					<label for="file">File</label>
-					<input type="file" name="file" id="file" multiple>
-	
-					<label for="date">Date</label>
-					<input type="date" name="date" id="date">
-
-					<label for="color">Color</label>
-					<input type="color" name="color" id="color">
-
-
+					<div>
+						<label for="text">Text</label>
+						<input type="text" name="text" placeholder="text">
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input type="email" name="email" placeholder="email address">
+					</div>
+					<div>
+						<label for="Password">Password</label>
+						<input type="password" name="text" value="" placeholder="sekret">
+					</div>
+					<div>
+						<label for="number">Number</label>
+						<input type="number" name="number" placeholder="123456" value="0">
+					</div>
+					<div>
+						<label for="tel">Tel</label>
+						<input type="tel" name="tel" placeholder="0413428890">
+					</div>
+					<div>
+						<label for="range">Range</label>
+						<input type="range" name="range" placeholder="500">
+					</div>
+					<div>
+						<label for="text">Textarea</label>
+						<textarea type="text" name="textarea" id="textarea"></textarea>
+					</div>
+					<div>
+						<label for="radio">Radio</label>
+						<input type="radio" name="radio" value="radio1" checked>
+						<input type="radio" name="radio" value="radio2">
+						<input type="radio" name="radio" value="radio3">
+					</div>
+					<div>
+						<label for="checkbox1">Checkbox1</label>
+						<input type="checkbox" name="checkbox" value="checkbox1" id="checkbox1" checked>
+						<label for="checkbox2">Checkbox2</label>
+						<input type="checkbox" name="checkbox" value="checkbox2" id="checkbox2">
+						<label for="checkbox3">Checkbox3</label>
+						<input type="checkbox" name="checkbox" value="checkbox3" id="checkbox3">
+					</div>
+					<div>
+						<label for="file">File</label>
+						<input type="file" name="file" id="file" multiple>
+					</div>
+					<div>
+						<label for="date">Date</label>
+						<input type="date" name="date" id="date">
+					</div>
+					<div>
+						<label for="color">Color</label>
+						<input type="color" name="color" id="color">
+					</div>
 				</fieldset>
 
 			</form>
